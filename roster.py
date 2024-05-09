@@ -10,7 +10,7 @@ player = {"Last Name" : ["Okonkwo", "Ingram", "Farris"],
 data = pd.DataFrame(player)
 
 #bmi
-data["bmi"] = (data ["weight"]/2.205)/((data ["height"]/39.37)**2)
+data["bmi"] = ((data["Weight"])/(data["Height"])**2) * 703
 
 print(data)
 
