@@ -6,5 +6,12 @@ player = {"Last Name" : ["Okonkwo", "Ingram", "Farris"],
           "Height" : [68, 67, 67],
           "Weight" : [230, 225, 210]
           }
+
 data = pd.DataFrame(player)
+
+#bmi
+data["bmi"] = (data ["weight"]/2.205)/((data ["height"]/39.37)**2)
+
 print(data)
+
+data.to_csv("bmi.csv")
